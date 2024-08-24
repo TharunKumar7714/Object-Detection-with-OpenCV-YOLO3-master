@@ -14,7 +14,8 @@ ap.add_argument("-t", "--threshold", type=float, default=0.3,
 	help="threshold when applying non-maxima suppression")
 args = vars(ap.parse_args())
 
-labelsPath = "../yolo-coco/coco.names"
+# labelsPath = "../yolo-coco/coco.names"
+labelsPath = "../yolo-coco/openimages.names"
 LABELS = open(labelsPath).read().strip().split("\n")
 
 np.random.seed(42)
