@@ -51,7 +51,7 @@ frames = []  # List to store processed frames
 # Determine output path
 input_filename = os.path.basename(args["input"])
 base_name, _ = os.path.splitext(input_filename)
-output_filename = f"{base_name}_output.mp4"
+output_filename = f"{base_name}_output.avi"
 output_folder = "output"
 if not os.path.exists(output_folder):
     os.makedirs(output_folder)
