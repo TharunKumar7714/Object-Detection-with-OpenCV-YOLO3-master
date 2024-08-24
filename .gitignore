@@ -1,5 +1,3 @@
-# Ignore video output files
-Object detection using video/output/*.mp4
 
 # Ignore any large files that exceed GitHub's limit
 *.avi
