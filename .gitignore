@@ -1,11 +1,7 @@
 # Ignore video output files
 Object detection using video/output/*.mp4
 
-# Ignore YOLO weights file
-yolo-coco/yolov3.weights
-
 # Ignore any large files that exceed GitHub's limit
 *.avi
 *.mp4
 *.mkv
-*.weights
