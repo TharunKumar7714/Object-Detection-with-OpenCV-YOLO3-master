@@ -1,4 +1,5 @@
-# USAGE COMMAND : python yolo.py --image images/baggage_claim.jpg
+# USAGE COMMAND
+# python yolo.py --image images/baggage_claim.jpg
 import numpy as np
 import argparse
 import time
@@ -14,8 +15,9 @@ ap.add_argument("-t", "--threshold", type=float, default=0.3,
 	help="threshold when applying non-maxima suppression")
 args = vars(ap.parse_args())
 
-# labelsPath = "../yolo-coco/coco.names"
-labelsPath = "../yolo-coco/openimages.names"
+labelsPath = "../yolo-coco/coco.names"
+# labelsPath = "../yolo-coco/openimages.names"
+# labelsPath = "../yolo-coco/9k.names"
 LABELS = open(labelsPath).read().strip().split("\n")
 
 np.random.seed(42)
